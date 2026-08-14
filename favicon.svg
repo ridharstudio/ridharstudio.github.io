@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#7b61ff"/>
-      <stop offset="1" stop-color="#06b6d4"/>
-    </linearGradient>
-  </defs>
-  <rect rx="12" width="64" height="64" fill="url(#g)" />
-  <text x="50%" y="52%" font-family="JetBrains Mono, monospace" font-size="22" text-anchor="middle" fill="#041024" font-weight="700">RS</text>
+  <rect rx="12" width="64" height="64" fill="#ffffff" stroke="#e6e9ee"/>
+  <text x="50%" y="54%" font-family="JetBrains Mono, monospace" font-size="22" text-anchor="middle" fill="#0b1220" font-weight="700">RS</text>
 </svg>
