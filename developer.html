@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Developer — Ridhar Studio</title>
-  <meta name="description" content="Profil singkat developer Ridhar Studio" />
+  <meta name="description" content="Short profile of the Ridhar Studio developer" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
-    :root{--bg:#ffffff;--text:#0b0f14;--muted:#6b7280}
+    :root{--bg:#ffffff;--text:#0b0f14;--muted:#6b7280;--accent:#0b1220;--hr:#eef2f5}
     body{margin:0;font-family:JetBrains Mono, monospace;background:var(--bg);color:var(--text);padding:36px 18px;display:flex;justify-content:center}
     .wrap{max-width:720px;width:100%}
     header{margin-bottom:18px}
@@ -16,28 +16,45 @@
     p.lead{color:var(--muted);margin-top:10px}
     .links{margin-top:14px}
     a.link{color:#0b1220;text-decoration:none;font-weight:700}
+    .divider{height:1px;background:var(--hr);margin:28px 0;border-radius:1px}
+    .cta{display:flex;flex-direction:column;gap:8px}
+    .cta p{margin:0 0 4px;font-weight:700}
+    .actions{margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:8px 12px;border-radius:8px;border:1px solid #e6e9ee;background:#ffffff;color:var(--text);text-decoration:none;font-weight:700;font-size:13px;font-family:Inter, sans-serif}
+    .btn.primary{background:var(--text);color:#fff;border:none}
     footer{margin-top:28px;color:var(--muted)}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>Ridhar Amadhansyah</h1>
+      <h1>Ridhar Ramadhansyah</h1>
       <p class="lead">Founder & Lead Developer — Ridhar Studio.</p>
     </header>
 
     <section>
-      <p>Singkat: saya membangun aplikasi mobile dan solusi web untuk klien dan produk sendiri. Portofolio lengkap dan koneksi profesional ada di LinkedIn dan GitHub.</p>
+      <p>Experienced across the software industry and startups — led trusted teams, worked end-to-end from QA to infrastructure, and trained as a PM. Many of my apps started as personal problems that turned out to help thousands of people.</p>
+
+      <p>Have a problem you want solved? <a class="link" href="mailto:ridhar.studio@gmail.com">Let's talk</a>.</p>
 
       <div class="links">
         <div>LinkedIn: <a class="link" href="https://id.linkedin.com/in/ridharamadhansyah" target="_blank" rel="noopener">/in/ridharamadhansyah</a></div>
-        <div>GitHub: <a class="link" href="https://github.com/ridharstudio" target="_blank" rel="noopener">@ridharstudio</a></div>
-        <div>Email: <a class="link" href="mailto:hello@ridhar.studio">hello@ridhar.studio</a></div>
+        <div>Email: <a class="link" href="mailto:ridhar.studio@gmail.com">ridhar.studio@gmail.com</a></div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="cta">
+      <div class="actions">
+        <a class="btn" href="/">Home</a>
+        <a class="btn" href="/portfolio.html">Portfolio</a>
+        <a class="btn primary" href="mailto:ridhar.studio@gmail.com">Start a Project</a>
       </div>
     </section>
 
     <footer>
-      Halaman singkat developer — hubungi untuk case study atau kolaborasi.
+      &copy; Ridhar Studio
     </footer>
   </div>
 </body>

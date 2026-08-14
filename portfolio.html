@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portofolio — Ridhar Studio</title>
-  <meta name="description" content="Portofolio aplikasi yang dikembangkan oleh Ridhar Studio" />
+  <title>Portfolio — Ridhar Studio</title>
+  <meta name="description" content="Apps developed by Ridhar Studio" />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
@@ -17,9 +17,11 @@
     .list{margin-top:22px;display:flex;flex-direction:column;gap:18px}
     .app{padding:18px;border-radius:8px;border:1px solid #f0f2f4;background:#fff}
     .app h3{margin:0 0 6px}
+    .app h3 .new{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;background:#0b1220;color:#fff;font-size:11px;font-weight:700;vertical-align:middle}
     .app p{margin:0;color:var(--muted)}
-    .actions{margin-top:18px}
+    .actions{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}
     a.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:#0b1220;color:#fff;text-decoration:none;font-weight:700}
+    .divider{height:1px;background:var(--hr);margin:28px 0;border-radius:1px}
     footer{margin-top:28px;color:var(--muted)}
   </style>
 </head>
@@ -27,28 +29,35 @@
   <div class="wrap">
     <header>
       <div>
-        <h1>Portofolio</h1>
-        <p class="lead">Beberapa aplikasi yang dikembangkan oleh Ridhar Studio dan sudah tersedia di Google Play.</p>
+        <h1>Portfolio</h1>
+        <p class="lead">Apps developed by Ridhar Studio, available on Google Play.</p>
       </div>
     </header>
 
     <section class="list">
       <article class="app">
         <h3>Zikir Indonesia</h3>
-        <p class="muted">Aplikasi zikir dan pengingat ibadah — tersedia di Google Play.</p>
-        <div class="actions"><a class="btn" href="https://play.google.com/store/apps/details?id=com.zikirindonesia" target="_blank" rel="noopener">Lihat di Play Store</a></div>
+        <p class="muted">Zikir and worship reminder app — available on Google Play. Rating 4.9 from 1.3k reviews· 10k+ downloads</p>
+        <p class="muted"></p>
+        <div class="actions"><a class="btn" href="https://play.google.com/store/apps/details?id=com.zikirindonesia" target="_blank" rel="noopener">View on Play Store</a></div>
       </article>
 
       <article class="app">
-        <h3>Zikir Indonesia (TV)</h3>
-        <p class="muted">Versi TV / media streaming dari Zikir Indonesia — cocok untuk perangkat Android TV.</p>
-        <div class="actions"><a class="btn" href="https://play.google.com/store/apps/details?id=com.zikirindonesia.tv" target="_blank" rel="noopener">Lihat di Play Store</a></div>
+        <h3>Zikir Indonesia (TV) <span class="new">Newest</span></h3>
+        <p class="muted">An app made for smart Android TVs that shows prayer times and plays Quran murottal on demand.</p>
+        <div class="actions"><a class="btn" href="https://play.google.com/store/apps/details?id=com.zikirindonesia.tv" target="_blank" rel="noopener">View on Play Store</a></div>
       </article>
     </section>
 
-    <footer>
-      Jika Anda ingin menambahkan case study atau screenshot untuk aplikasi, beri tahu kami dan kami akan memperbarui halaman ini.
-    </footer>
+    <div class="divider"></div>
+
+     <div class="actions">
+      <a class="btn" href="/">Home</a>
+      <a class="btn" href="mailto:ridhar.studio@gmail.com">Contact</a>
+      <a class="btn" href="/developer.html">Developer</a>
+    </div>
+
+    <footer>&copy; Ridhar Studio</footer>
   </div>
 </body>
 </html>
