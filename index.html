@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ridhar Studio — Software & Design</title>
+  <meta name="description" content="Ridhar Studio — layanan pengembangan perangkat lunak, web, dan desain untuk developer & perusahaan.">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6bf;--accent:#06b6d4}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,#071024 0%,#061726 100%);color:#e6eef8}
+    .container{max-width:900px;margin:48px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#041024}
+    h1{margin:0;font-size:1.8rem}
+    p.lead{color:var(--muted);margin:8px 0 20px}
+    .card{background:rgba(255,255,255,0.02);padding:20px;border-radius:12px;box-shadow:0 6px 24px rgba(2,6,23,0.6);margin-bottom:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    ul{margin:0;padding:0;list-style:none}
+    li{margin-bottom:8px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#041024;text-decoration:none;font-weight:600}
+    footer{margin-top:28px;color:var(--muted);font-size:0.9rem;text-align:center}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:0.9rem}
+    @media (max-width:520px){.container{padding:16px}h1{font-size:1.4rem}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">RS</div>
+      <div>
+        <h1>Ridhar Studio</h1>
+        <p class="lead">Software & Design Studio — membuat aplikasi web, mobile, dan identitas digital untuk startup dan perusahaan.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Tentang Kami</h2>
+      <p style="color:var(--muted)">Ridhar Studio membantu tim dan individu membangun produk digital berkualitas: website produk, toko online, aplikasi internal, dan brand identity. Kami berfokus pada solusi yang sederhana, cepat, dan dapat diskalakan.</p>
+      <div style="margin-top:12px" class="chips">
+        <span class="chip">Web Development</span>
+        <span class="chip">UI/UX Design</span>
+        <span class="chip">Mobile Apps</span>
+        <span class="chip">Consulting</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Layanan</h2>
+      <div class="grid">
+        <div>
+          <h3 style="margin-top:0">Pengembangan Web</h3>
+          <p style="color:var(--muted);margin-top:6px">SPA, SSR, static sites, REST & GraphQL API, integrasi pembayaran, dan deployment otomatis.</p>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Desain & Brand</h3>
+          <p style="color:var(--muted);margin-top:6px">UI/UX, branding, design systems, dan prototyping untuk pengalaman produk yang konsisten.</p>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Aplikasi Mobile</h3>
+          <p style="color:var(--muted);margin-top:6px">Cross-platform apps dengan performa tinggi, integrasi backend, dan monitoring.</p>
+        </div>
+        <div>
+          <h3 style="margin-top:0">B2B & Konsultasi</h3>
+          <p style="color:var(--muted);margin-top:6px">Arsitektur sistem, audit keamanan, dan strategy delivery untuk tim engineering.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Proyek & Portofolio</h2>
+      <p style="color:var(--muted)">Beberapa proyek dapat dilihat di GitHub kami. Untuk contoh lengkap dan case study, silakan hubungi kami.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://github.com/ridharstudio">Lihat GitHub</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Kontak</h2>
+      <ul style="color:var(--muted);margin-top:8px">
+        <li>Email: <a href="mailto:hello@ridhar.studio" style="color:#bfeaf5">hello@ridhar.studio</a></li>
+        <li>Twitter: <a href="https://twitter.com/ridharstudio" style="color:#bfeaf5">@ridharstudio</a></li>
+        <li>GitHub: <a href="https://github.com/ridharstudio" style="color:#bfeaf5">github.com/ridharstudio</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      Dibuat oleh Ridhar Studio • Repo ini: <a href="https://github.com/ridharstudio/ridharstudio-page" style="color:#bfeaf5">ridharstudio/ridharstudio-page</a>
+    </footer>
+  </main>
+</body>
+</html>
