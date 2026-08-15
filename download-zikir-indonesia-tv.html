@@ -161,43 +161,15 @@
     </header>
 
     <main class="card" aria-live="polite">
-      <p class="lead">Anda akan diarahkan ke halaman Google Play versi browser untuk melanjutkan install aplikasi.</p>
+      <p class="lead">Klik tombol di bawah untuk membuka halaman Google Play di browser. Tujuannya agar user tetap masuk ke pengalaman browser dan tidak langsung dibawa ke opsi install native di aplikasi.</p>
 
       <div class="actions">
-        <a class="btn primary" id="intentLink" href="">Buka Google Play</a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US" target="_blank" rel="noopener noreferrer">Buka di browser</a>
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US" target="_blank" rel="noopener noreferrer">Buka di browser</a>
       </div>
 
       <div class="divider"></div>
-      <div class="hint">Jika tidak otomatis berpindah, klik tombol di atas.</div>
+      <div class="hint">Halaman ini dibuat agar user memilih secara manual untuk membuka Google Play di browser.</div>
     </main>
   </div>
-
-  <script>
-    (function () {
-      const playUrl = "https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US";
-      const intentUrl = "intent://details?id=com.zikirindonesia.tv&hl=id&gl=US#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=" + encodeURIComponent(playUrl) + ";end";
-      const userAgent = navigator.userAgent || "";
-      const isAndroid = /Android/i.test(userAgent);
-      const intentLink = document.getElementById('intentLink');
-
-      if (intentLink) {
-        intentLink.href = isAndroid ? intentUrl : playUrl;
-      }
-
-      if (isAndroid) {
-        const iframe = document.createElement('iframe');
-        iframe.style.display = 'none';
-        iframe.src = intentUrl;
-        document.body.appendChild(iframe);
-
-        setTimeout(function () {
-          window.location.href = playUrl;
-        }, 1800);
-      } else {
-        window.location.href = playUrl;
-      }
-    })();
-  </script>
 </body>
 </html>
