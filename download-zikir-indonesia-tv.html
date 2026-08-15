@@ -6,17 +6,16 @@
   <title>Download Zikir Indonesia TV</title>
   <meta name="description" content="Download aplikasi Zikir Indonesia TV di Google Play melalui halaman browser aman agar tetap membuka versi web Play Store." />
   <meta name="robots" content="noindex, nofollow" />
-  <meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0b1020;
-      --card: #111a2a;
-      --card-2: #17263d;
-      --text: #f4f7fb;
-      --muted: #bfd0ea;
-      --primary: #6ec5ff;
-      --primary-2: #8ef0c7;
-      --border: rgba(255,255,255,0.08);
+      --bg: #ffffff;
+      --text: #0b0f14;
+      --muted: #6b7582;
+      --accent: #0b1220;
+      --hr: #eef2f5;
+      --panel: #ffffff;
+      --border: #e7ebf0;
     }
 
     * { box-sizing: border-box; }
@@ -24,111 +23,177 @@
     html, body {
       margin: 0;
       min-height: 100%;
-      background: linear-gradient(135deg, #0b1020 0%, #101d33 100%);
+      background: var(--bg);
       color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     body {
-      display: grid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 48px 18px;
+    }
+
+    .wrap {
+      width: min(100%, 760px);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+      display: inline-grid;
       place-items: center;
-      padding: 24px;
+      background: #f7f7f8;
+      border: 1px solid #eceff1;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .title {
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 3.1rem);
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 14px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
 
     .card {
-      width: min(100%, 520px);
-      background: rgba(17, 26, 42, 0.92);
+      background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 20px;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+      border-radius: 12px;
       padding: 28px 24px;
-      text-align: center;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
     }
 
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 68px;
-      height: 68px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, var(--primary), var(--primary-2));
-      color: #07131c;
-      font-weight: 800;
-      font-size: 28px;
-      margin-bottom: 16px;
-    }
-
-    h1 {
+    .lead {
       margin: 0;
-      font-size: clamp(1.9rem, 5vw, 2.6rem);
-      line-height: 1.15;
-    }
-
-    p {
-      margin: 14px auto 0;
       color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.7;
-      max-width: 40ch;
+      font-size: 16px;
+      line-height: 1.8;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 52ch;
     }
 
     .actions {
       display: flex;
       justify-content: center;
       gap: 12px;
-      margin-top: 24px;
+      margin-top: 26px;
       flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      background: linear-gradient(135deg, var(--primary), var(--primary-2));
-      color: #06131a;
       text-decoration: none;
-      font-weight: 800;
-      border-radius: 12px;
-      padding: 14px 20px;
-      min-width: 200px;
-      box-shadow: 0 10px 24px rgba(110, 197, 255, 0.28);
+      border-radius: 8px;
+      padding: 10px 14px;
+      min-width: 180px;
+      text-align: center;
+      border: 1px solid #e6e9ee;
+      background: #ffffff;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 13px;
+      font-family: Inter, sans-serif;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
-    .btn.secondary {
-      background: transparent;
-      color: var(--text);
-      border: 1px solid var(--border);
-      box-shadow: none;
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn.primary {
+      background: var(--text);
+      border-color: var(--text);
+      color: #ffffff;
+      box-shadow: 0 8px 16px rgba(11, 15, 20, 0.12);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--hr);
+      margin: 28px 0;
+      border-radius: 1px;
     }
 
     .hint {
       margin-top: 18px;
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.7);
+      color: var(--muted);
+      font-size: 12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .header { margin-bottom: 18px; }
+      .card { padding: 22px 18px; }
+      .actions { display: grid; grid-template-columns: 1fr; }
+      .btn { min-width: 0; width: 100%; }
     }
   </style>
 </head>
 <body>
-  <main class="card" aria-live="polite">
-    <div class="badge">TV</div>
-    <h1>Download Zikir Indonesia TV</h1>
-    <p>Anda akan diarahkan ke halaman Google Play versi browser untuk melanjutkan install aplikasi.</p>
+  <div class="wrap">
+    <header class="header">
+      <div class="logo">TV</div>
+      <div>
+        <h1 class="title">Zikir Indonesia TV</h1>
+        <div class="subtitle">Download via Google Play</div>
+      </div>
+    </header>
 
-    <div class="actions">
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US">Buka Google Play</a>
-      <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US" target="_blank" rel="noopener noreferrer">Buka di tab baru</a>
-    </div>
+    <main class="card" aria-live="polite">
+      <p class="lead">Anda akan diarahkan ke halaman Google Play versi browser untuk melanjutkan install aplikasi.</p>
 
-    <div class="hint">Jika tidak otomatis berpindah, klik tombol di atas.</div>
-  </main>
+      <div class="actions">
+        <a class="btn primary" id="intentLink" href="">Buka Google Play</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US" target="_blank" rel="noopener noreferrer">Buka di browser</a>
+      </div>
+
+      <div class="divider"></div>
+      <div class="hint">Jika tidak otomatis berpindah, klik tombol di atas.</div>
+    </main>
+  </div>
 
   <script>
     (function () {
       const playUrl = "https://play.google.com/store/apps/details?id=com.zikirindonesia.tv&hl=id&gl=US";
+      const intentUrl = "intent://details?id=com.zikirindonesia.tv&hl=id&gl=US#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=" + encodeURIComponent(playUrl) + ";end";
       const userAgent = navigator.userAgent || "";
       const isAndroid = /Android/i.test(userAgent);
+      const intentLink = document.getElementById('intentLink');
+
+      if (intentLink) {
+        intentLink.href = isAndroid ? intentUrl : playUrl;
+      }
 
       if (isAndroid) {
-        window.location.replace(playUrl);
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = intentUrl;
+        document.body.appendChild(iframe);
+
+        setTimeout(function () {
+          window.location.href = playUrl;
+        }, 1800);
       } else {
         window.location.href = playUrl;
       }

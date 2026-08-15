@@ -4,16 +4,132 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>404 — Not found</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body{background:#071022;color:#e6eef8;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
-    .wrap{text-align:center}
-    a{color:#7b61ff}
+    :root {
+      --bg: #ffffff;
+      --text: #0b0f14;
+      --muted: #6b7582;
+      --hr: #eef2f5;
+      --border: #e7ebf0;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      padding: 48px 18px;
+    }
+
+    .wrap {
+      width: min(100%, 700px);
+      text-align: center;
+      padding: 32px 24px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 3rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 18px auto 0;
+      max-width: 48ch;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid #e6e9ee;
+      background: #ffffff;
+      color: var(--text);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 13px;
+      font-family: Inter, sans-serif;
+    }
+
+    .btn.primary {
+      background: var(--text);
+      border-color: var(--text);
+      color: #ffffff;
+      box-shadow: 0 8px 16px rgba(11, 15, 20, 0.12);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--hr);
+      margin: 26px auto 0;
+      width: 100%;
+      max-width: 220px;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 24px 18px;
+      }
+      .actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>404 — Page not found</h1>
-    <p>Sorry, the page you're looking for doesn't exist. Go back to <a href="/">home</a>.</p>
+    <div class="eyebrow">404 Error</div>
+    <h1>Page not found</h1>
+    <p>Sorry, the page you're looking for doesn't exist. Let's get you back to the homepage.</p>
+
+    <div class="actions">
+      <a class="btn primary" href="/">Back to Home</a>
+      <a class="btn" href="/portfolio.html">View Portfolio</a>
+    </div>
+
+    <div class="divider"></div>
   </div>
 </body>
 </html>
