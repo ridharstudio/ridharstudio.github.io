@@ -4,12 +4,12 @@
   import { projects } from '$lib/data/projects';
 </script>
 
-<PageMeta title="Portfolio — Ridhar Studio" description="Portfolio of apps developed by Ridhar Studio, including Zikir Indonesia and Zikir Indonesia TV." path="/portfolio/" />
+<PageMeta title="Portfolio — Ridhar Studio" description="Portfolio of apps and web tools developed by Ridhar Studio, including Reaction Drill, Zikir Indonesia and Zikir Indonesia TV." path="/portfolio/" />
 <main class="wrap">
-  <header><h1>Portfolio</h1><p>Apps developed by Ridhar Studio, available on Google Play.</p></header>
+  <header><h1>Portfolio</h1><p>Apps and web tools developed by Ridhar Studio, available on Google Play and the web.</p></header>
   <section class="list">
     {#each projects as project}
-      <article class="app"><h2>{project.name} {#if project.newest}<span>Newest</span>{/if}</h2><p>{project.description}</p><div class="actions"><ButtonLink href={project.url} external>View on Play Store</ButtonLink></div></article>
+      <article class="app"><h2>{project.name} {#if project.newest}<span>Newest</span>{/if}</h2><p>{project.description}</p><div class="actions"><ButtonLink href={project.url} external>{project.linkLabel}</ButtonLink></div></article>
     {/each}
   </section>
   <div class="divider"></div>
