@@ -10,7 +10,7 @@ export const projects: Project[] = [
   {
     name: 'Reaction Drill',
     description: 'Web app for reaction training that generates large color or number signals at a configurable interval, with sets and rest breaks.',
-    url: 'https://reaction-drill.vercel.app',
+    url: 'https://reaction-drill.ridharstudio.work',
     linkLabel: 'Open web app',
     newest: true
   },
